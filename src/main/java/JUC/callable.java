@@ -27,7 +27,7 @@ public class callable {
         System.out.println(futureTask.get());
 
 
-        ArrayList arrayList = new ArrayList();
+
 
 
 
