@@ -6,6 +6,10 @@ import java.util.concurrent.BlockingQueue;
 
 public class Demo {
 
+    /**
+     *   add  remove  会报异常  offer  poll  在等待设置的时间 没有则返回null   put  take  会一直等待
+     * @param args
+     */
     public static void main(String[] args) {
         BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<String>(3);
         System.out.println(blockingQueue.add("a"));

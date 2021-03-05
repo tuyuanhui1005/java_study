@@ -5,12 +5,8 @@ import java.util.concurrent.SynchronousQueue;
 public class SynchronousQueueDemo {
 
     public static void main(String[] args) {
-
         SynchronousQueue<String> synchronousQueue = new SynchronousQueue<>();
-
         new Thread( () -> {
-
-
             try {
                 System.out.println(Thread.currentThread().getName() + "\t put 1");
                 synchronousQueue.put("1");
@@ -19,9 +15,8 @@ public class SynchronousQueueDemo {
             }
         },"AAA").start();
 
+
         new Thread( () -> {
-
-
             try {
                 System.out.println(Thread.currentThread().getName() + "\t take 1");
                 synchronousQueue.take();
